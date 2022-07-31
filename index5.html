@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глясе</title>
+    <link rel="stylesheet" href="./css/style5.css">
+    <link rel="icon" href="./icons/favicon.ico">
+
+</head>
+<body>
+    <section class="product">
+        <div class="product__photo">
+            <div class="photo-container">
+                <div class="photo-main">
+                    <img src="./img/глясепрайс.png"  class="imgprice" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="product__info">
+            <div class="title">
+                <a href="./index.html" class="previous">🠐  на главную</a>
+                <h1 class="titlee">ГЛЯСЕ</h1>
+            </div>
+            <div class="imgpricemobile">
+                <img src="./img/глясепрайс.png" alt="">           
+            </div>
+            <div class="price">
+                ₽ <span >355 </span>
+            </div>
+            <div class="description">
+                <h3>ОПИСАНИЕ</h3>
+                <p>
+                    Смешивание эспрессо или американо с <br>дополнительными ингредиентами <br>позволяет получить латте, капучино,<br> фраппе, раф и др. Один из наиболее <br>популярных видов кофе — глясе. Его<br> готовят на основе американо и пломбира,<br>  но для обогащения вкуса нередко <br>добавляют молоко, сливки, специи и др.
+                </p>
+                <p>  
+                    Глясе — это холодный кофейный напиток,<br> который готовят из 3 частей американо и<br> 1 части мороженого. Чаще всего основу<br> для этого десерта делают некрепкой и<br> сладкой.
+                    Чтобы верх не растаял до <br>употребления, в кофе добавляют колотый<br> лед, холодные сливки или молоко, а лишь<br> затем выкладывают в чашку шарик пломбира.
+                </p>
+
+                <button id="minus"  class="glow-button">-</button> 
+                <input name="input" type="text" id="col" size="1" value="1" class=".type-1">
+                <button id="plus"  class="glow-button">+</button>
+                
+            </div>
+            
+        
+            <button class="buy--btn" onClick="Click()">ЗАКАЗАТЬ</button>
+        </div>
+    </section>
+    
+<!-- модальное окно  -->
+<script>
+    function Click(){
+        alert("Товар добавлен в корзину");
+    }
+</script>
+<!-- -1+ -->
+<script>
+    let col = document.getElementById('col');
+    let plus = document.getElementById('plus');
+    let minus = document.getElementById('minus');
+
+    plus.onclick = function() {
+        col.value = parseInt(col.value) + 1;
+    }
+    minus.onclick = function() {
+        col.value = parseInt(col.value) - 1;
+    }     
+</script>
+
+</body>
+</html>

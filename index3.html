@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эспрессо</title>
+    <link rel="stylesheet" href="./css/style3.css">
+    <link rel="icon" href="./icons/favicon.ico">
+</head>
+<body>
+    <!-- карточка товара -->
+    <div class="product">
+        <!-- фото продукта -->
+        <div class="product__photo">
+            <div class="photo-container">
+                <div class="photo-main">
+                    <img src="./img/эспрессопрайс.png"  class="imgprice" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- информация о продукте -->
+        <div class="product__info">
+            <!-- название продукта -->
+            <div class="title">
+                <a href="./index.html" class="previous">🠐  на главную</a>
+                <h1 class="titlee">ЭСПРЕССО</h1>
+            </div>
+            <div class="imgpricemobile">
+                <img src="./img/эспрессопрайс.png" alt="">
+            </div>
+            <!-- цена -->
+            <div class="price">
+                ₽ <span>330</span>
+            </div>
+            <!-- описание -->
+            <div class="description">
+                <h3>ОПИСАНИЕ</h3>
+                <p>
+                    Эспрессо — сложный и интересный напиток. <br> Его считают одним из самых привередливых <br>к условиям приготовления и навыкам бариста.<br> Консистенция эспрессо напоминает сироп —<br> концентрированный напиток с очень<br> интенсивным вкусом.
+                </p>
+                <p>  
+                    Чтобы приготовить вкусный эспрессо, нужно<br> внимательно выбирать зерно, следить за<br> чистотой оборудования, давлением и <br>температурой воды, дозировкой кофе, <br>темперовкой и временем приготовления.<br>Ещё нужен опыт, который постепенно <br>появляется, когда человек готовит<br> эспрессо, пробует его и делает выводы.
+                </p>
+                <!-- кнопочки количества  -->
+                <button id="minus"  class="glow-button">-</button> 
+                <input name="input" type="text" id="col" size="1" value="1" class=".type-1">
+                <button id="plus"  class="glow-button">+</button>  
+            </div>
+            <!-- заказать кнопка -->
+            <button class="buy--btn" onClick="Click()">ЗАКАЗАТЬ</button>
+        </div>
+    </div>
+</body>
+
+<!-- модальное окно  -->
+<script>
+    function Click(){
+        alert("Товар добавлен в корзину");
+    }
+</script>
+<!-- -1+ -->
+<script>
+    let col = document.getElementById('col');
+    let plus = document.getElementById('plus');
+    let minus = document.getElementById('minus');
+
+    plus.onclick = function() {
+        col.value = parseInt(col.value) + 1;
+    }
+    minus.onclick = function() {
+        col.value = parseInt(col.value) - 1;
+    }     
+</script>
+
+
+</html>

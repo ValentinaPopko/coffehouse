@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мокачино</title>
+    <link rel="stylesheet" href="./css/style9.css">
+    <link rel="icon" href="./icons/favicon.ico">
+
+</head>
+<body>
+    <section class="product">
+        <div class="product__photo">
+            <div class="photo-container">
+                <div class="photo-main">
+                    <img src="./img/мокачинопрайс.png"  class="imgprice" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="product__info">
+            <div class="title">
+                <a href="./index.html" class="previous">🠐  на главную</a>
+                <h1 class="titlee">МОКАЧИНО</h1>
+            </div>
+            <div class="imgpricemobile">
+                <img src="./img/мокачинопрайс.png" alt="">
+            </div>
+            <div class="price">
+                ₽ <span>325</span>
+            </div>
+            <div class="description">
+                <h3>ОПИСАНИЕ</h3>
+                <p>
+                    Если вы хотите насладиться <br>восхитительным вкусом, попробуйте <br>кофе мокачино. Этот удивительный <br>напиток заслуженно пользуется <br>популярностью во всем мире <br>благодаря необычным качествам.
+                </p>
+                <p>  
+                    Мокачино – это десертный кофейный <br>напиток, в который добавляются <br>молоко и горячий шоколад.
+                </p>
+
+                <button id="minus"  class="glow-button">-</button> 
+                <input name="input" type="text" id="col" size="1" value="1" class=".type-1">
+                <button id="plus"  class="glow-button">+</button>
+                
+            </div>
+            
+        
+            <button class="buy--btn" onClick="Click()">ЗАКАЗАТЬ</button>
+        </div>
+    </section>
+    
+
+<!-- модальное окно  -->
+<script>
+    function Click(){
+        alert("Товар добавлен в корзину");
+    }
+</script>
+<!-- -1+ -->
+<script>
+    let col = document.getElementById('col');
+    let plus = document.getElementById('plus');
+    let minus = document.getElementById('minus');
+
+    plus.onclick = function() {
+        col.value = parseInt(col.value) + 1;
+    }
+    minus.onclick = function() {
+        col.value = parseInt(col.value) - 1;
+    }     
+</script>
+</body>
+</html>

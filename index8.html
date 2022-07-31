@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Американо</title>
+    <link rel="stylesheet" href="./css/style8.css">
+    <link rel="icon" href="./icons/favicon.ico">
+
+</head>
+<body>
+    <section class="product">
+        <div class="product__photo">
+            <div class="photo-container">
+                <div class="photo-main">
+                    <img src="./img/американопрайс.png"  class="imgprice" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="product__info">
+            <div class="title">
+                <a href="./index.html" class="previous">🠐  на главную</a>
+                <h1 class="titlee">АМЕРИКАНО</h1>
+            </div>
+            <div class="imgpricemobile">
+                <img src="./img/американопрайс.png" alt="">
+            </div>
+            <div class="price">
+                ₽ <span class="priceee">370 </span>
+            </div>
+            <div class="description">
+                <h3>ОПИСАНИЕ</h3>
+                <p>
+                    Особенность американо – нежный вкус. <br>Этот кофе отличается от других напитков<br> очень низкой концентрацией кофеина:<br> в порции американо объёмом от 60 до <br>120 мл (а иногда и больше) – столько же <br>кофеина, сколько в 30 мл эспрессо.
+                </p>
+                <p>  
+                    Американо часто отдают предпочтение <br>люди с очень чувствительными вкусовыми <br>рецепторами, способные распознавать <br>малейшие оттенки вкуса. Другая <br>категория – те, кто больше любит аромат<br> кофе, чем вкус.
+                </p>
+
+                <button id="minus"  class="glow-button">-</button> 
+                <input name="input" type="text" id="col" size="1" value="1" class=".type-1">
+                <button id="plus"  class="glow-button">+</button>
+                
+            </div>
+            
+        
+            <button class="buy--btn" onClick="Click()">ЗАКАЗАТЬ</button>
+        </div>
+    </section>
+    
+
+<!-- модальное окно  -->
+<script>
+    function Click(){
+        alert("Товар добавлен в корзину");
+    }
+</script>
+<!-- -1+ -->
+<script>
+    let col = document.getElementById('col');
+    let plus = document.getElementById('plus');
+    let minus = document.getElementById('minus');
+
+    plus.onclick = function() {
+        col.value = parseInt(col.value) + 1;
+    }
+    minus.onclick = function() {
+        col.value = parseInt(col.value) - 1;
+    }     
+</script>
+
+</body>
+</html>

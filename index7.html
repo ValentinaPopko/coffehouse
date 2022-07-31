@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мокко</title>
+    <link rel="stylesheet" href="./css/style7.css">
+    <link rel="icon" href="./icons/favicon.ico">
+
+</head>
+<body>
+    <section class="product">
+        <div class="product__photo">
+            <div class="photo-container">
+                <div class="photo-main">
+                    <img src="./img/моккопрайс.png"  class="imgprice" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="product__info">
+            <div class="title">
+                <a href="./index.html" class="previous">🠐  на главную</a>
+                <h1 class="titlee">МОККО</h1>
+            </div>
+            <div class="imgpricemobile">
+                <img src="./img/моккопрайс.png"  alt="">
+            </div>
+            <div class="price">
+                ₽ <span>340 </span>
+            </div>
+            <div class="description">
+                <h3>ОПИСАНИЕ</h3>
+                <p>
+                    Популярность десертных кофейных <br>коктейлей стремительно растет. <br>Одним из наиболее востребованных <br>является кофе мокко. Он имеет <br>изысканный долгоиграющий вкус, <br>в меру бодрит и поднимает настроение.
+                </p>
+                <p>  
+                    Напиток мокко появился благодаря <br>тому, что посетителям кафе в 70-80-е <br>гг. эспрессо казался излишне горьким. <br>Бариста решили исправить ситуацию,<br> добавив в кофе сливки и какао. <br>Большинство экспертов считает, что <br>родиной такого коктейля является США.
+                </p>
+
+                <button id="minus"  class="glow-button">-</button> 
+                <input name="input" type="text" id="col" size="1" value="1" class=".type-1">
+                <button id="plus"  class="glow-button">+</button>
+                
+            </div>
+            
+        
+            <button class="buy--btn" onClick="Click()">ЗАКАЗАТЬ</button>
+        </div>
+    </section>
+    
+
+<!-- модальное окно  -->
+<script>
+    function Click(){
+        alert("Товар добавлен в корзину");
+    }
+</script>
+<!-- -1+ -->
+<script>
+    let col = document.getElementById('col');
+    let plus = document.getElementById('plus');
+    let minus = document.getElementById('minus');
+
+    plus.onclick = function() {
+        col.value = parseInt(col.value) + 1;
+    }
+    minus.onclick = function() {
+        col.value = parseInt(col.value) - 1;
+    }     
+</script>
+
+</body>
+</html>

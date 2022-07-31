@@ -1,0 +1,380 @@
+body {
+  padding: 20px;
+  background-image: url(../img/кофе\ фон.jpg);
+  background-attachment: fixed;
+}
+
+/* цвет выделения */
+p::selection{
+  color: #fff;
+  background-color: rgb(49, 25, 25);
+}
+div::selection{
+  color: #fff;
+  background-color: rgb(49, 25, 25);
+}
+h1::selection{
+  color: #fff;
+  background-color: rgb(49, 25, 25);
+}
+h2::selection{
+  color: #fff;
+  background-color: rgb(49, 25, 25);
+}
+h3::selection{
+  color: #fff;
+  background-color: rgb(49, 25, 25);
+}
+h4::selection{
+  color: #fff;
+  background-color: rgb(49, 25, 25);
+}
+span::selection{
+  color: #fff;
+  background-color: rgb(49, 25, 25);
+}
+img::selection{
+  background-color: rgba(49, 25, 25, 0.55);
+}
+a::selection{
+  color: #fff;
+  background-color: rgb(49, 25, 25);
+}
+button::selection{
+  color: #fff;
+  background-color: rgb(49, 25, 25);
+}
+
+
+
+/* Заголовок */
+.header{
+  background-color: rgb(49, 25, 25);
+  border-radius: 50px;
+  color: white;
+  border: solid rgb(255, 255, 255) 2px ;
+
+}
+.header h2{
+  padding: 50px;
+  text-align: center;
+  margin: 0px;
+  font-family: 'Rubik', sans-serif; 
+  font-weight: 600; 
+  text-transform: uppercase;
+  position: relative;
+  font-size:60px;
+}
+/* карточки */
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  opacity: 0.9;
+}
+/* основная статья */
+b{
+  font-family: 'Merriweather', serif;
+  font-size: 19px;
+}
+.leftcolumn {
+  width: 75%;
+}
+.row .leftcolumn .card h2{
+  font-family: 'Rubik', sans-serif; 
+  font-weight: 600; 
+  text-transform: uppercase; 
+  position: relative; 
+  font-size: 45px;
+}
+.row .leftcolumn .card img{
+  border-radius: 25px; 
+  float: left; 
+  margin: 0px 20px 10px 0px; 
+  opacity: 0.99;
+  width: 38%;
+}
+.row .leftcolumn .card p{
+  text-align: justify;
+}
+/* другие статьи */
+span{
+  display: none;
+}
+
+.rightcolumn {
+  width: 25%;
+  padding-left: 20px;
+}
+.row .rightcolumn .card h2{
+  font-family: 'Rubik', sans-serif; 
+  font-weight: 600; 
+  text-transform: uppercase; 
+  position: relative; 
+  font-size: 30px;
+}
+.row .rightcolumn .card h2 a{
+  text-decoration: none;
+  color: black;
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 25px;
+  border: solid rgb(49, 25, 25) 2px ;
+}
+.card:hover{
+  border: dashed rgb(49, 25, 25) 2px ;
+  box-shadow: 1px 1px 50px rgb(49, 25, 25);
+  transition: .5s;
+}
+.row .rightcolumn .card img{
+  width: 100%;
+  border-radius: 25px;  
+  opacity: 0.99;
+}
+/* вернуться на главную */
+.footer {
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: rgb(49, 25, 25);
+  border-radius: 50px;
+  color: white;
+  border: solid rgb(255, 255, 255) 2px ;
+}
+.footer h2{
+  padding: 20px;
+  text-align: center;
+  margin: 0px;
+  font-family: 'Rubik', sans-serif; 
+  font-weight: 600; 
+  text-transform: uppercase;
+  position: relative;
+  font-size:40px;
+}
+.footer h2 a{
+  color: white; 
+  text-decoration: none;
+}
+
+
+
+
+/* Адаптация */
+@media(max-width: 767px){
+  /* карточки */
+  .row{
+    /* display: inline; */
+    display: block;
+  }
+  /* основная статья */
+  .leftcolumn {
+    width: 100%;
+  }
+  .row .leftcolumn .card h2{
+    text-align: center;
+  }
+  .row .leftcolumn .card img{
+    /* height: 300px;  */
+    width: 100%;
+    border-radius: 25px; 
+    float: left; 
+    margin: 0px 20px 10px 0px; 
+    opacity: 0.99;
+  }
+  .row .leftcolumn .card p{
+    text-align: justify;
+  }
+  /* другие статьи */
+  .rightcolumn {
+    width: 100%;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .row .rightcolumn .card h2{
+    font-family: 'Rubik', sans-serif; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    position: relative; 
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+  }
+  .row .rightcolumn .card h2 a{
+    text-decoration: none;
+    color: black;
+  }
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 25px;
+    border: dashed rgb(49, 25, 25) 1px ;
+  }
+  .card:hover{
+    border: dashed rgb(49, 25, 25) 1px ;
+    box-shadow: 1px 1px 50px rgb(49, 25, 25);
+  }
+  .row .rightcolumn .card img{
+    height:200px; 
+    width: 50%;
+    border-radius: 25px;  
+    opacity: 0.99;
+    float: left;
+    padding-right: 10px;
+  }
+
+  span{
+    display: inline;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  /* карточки */
+  .row{
+    /* display: inline; */
+    display: block;
+  }
+  /* основная статья */
+  .leftcolumn {
+    width: 100%;
+  }
+  .row .leftcolumn .card h2{
+    text-align: center;
+  }
+  .row .leftcolumn .card img{
+    height: 210px; 
+    border-radius: 25px; 
+    float: left; 
+    margin: 0px 20px 10px 0px; 
+    opacity: 0.99;
+  }
+  .row .leftcolumn .card p{
+    text-align: justify;
+  }
+  /* другие статьи */
+  .rightcolumn {
+    width: 100%;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .row .rightcolumn .card h2{
+    font-family: 'Rubik', sans-serif; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    position: relative; 
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+  }
+  .row .rightcolumn .card h2 a{
+    text-decoration: none;
+    color: black;
+  }
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 25px;
+    border: dashed rgb(49, 25, 25) 1px ;
+  }
+  .card:hover{
+    border: dashed rgb(49, 25, 25) 1px ;
+    box-shadow: 1px 1px 50px rgb(49, 25, 25);
+  }
+  .row .rightcolumn .card img{
+    height:200px; 
+    width: 40%;
+    border-radius: 25px;  
+    opacity: 0.99;
+    float: left;
+    padding-right: 10px;
+  }
+
+  span{
+    display: inline;
+  }
+
+
+}
+
+@media(min-width: 992px) and (max-width: 1199px){
+  /* карточки */
+  .row{
+    /* display: inline; */
+    display: block;
+  }
+  /* основная статья */
+  .leftcolumn {
+    width: 100%;
+  }
+  .row .leftcolumn .card h2{
+    text-align: center;
+  }
+  .row .leftcolumn .card img{
+    height: 300px; 
+    border-radius: 25px; 
+    float: left; 
+    margin: 0px 20px 10px 0px; 
+    opacity: 0.99;
+  }
+  .row .leftcolumn .card p{
+    text-align: justify;
+  }
+  /* другие статьи */
+  .rightcolumn {
+    width: 100%;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .row .rightcolumn .card h2{
+    font-family: 'Rubik', sans-serif; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    position: relative; 
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+  }
+  .row .rightcolumn .card h2 a{
+    text-decoration: none;
+    color: black;
+  }
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 25px;
+    border: dashed rgb(49, 25, 25) 1px ;
+  }
+  .card:hover{
+    border: dashed rgb(49, 25, 25) 1px ;
+    box-shadow: 1px 1px 50px rgb(49, 25, 25);
+  }
+  .row .rightcolumn .card img{
+    height:200px; 
+    width: 30%;
+    border-radius: 25px;  
+    opacity: 0.99;
+    float: left;
+    padding-right: 10px;
+  }
+
+  span{
+    display: inline;
+  }
+}

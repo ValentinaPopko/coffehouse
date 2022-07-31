@@ -1,0 +1,1240 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mina', sans-serif;
+    color: white;
+    line-height: 1.6;
+    
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3,p{
+    padding: 0;
+    margin: 0;
+}
+
+/* цвет выделения */
+p::selection{
+    color: #fff;
+    background-color: rgb(49, 25, 25);
+}
+div::selection{
+    color: #fff;
+    background-color: rgb(49, 25, 25);
+}
+h1::selection{
+    color: #fff;
+    background-color: rgb(49, 25, 25);
+}
+h2::selection{
+    color: #fff;
+    background-color: rgb(49, 25, 25);
+}
+h3::selection{
+    color: #fff;
+    background-color: rgb(49, 25, 25);
+}
+h4::selection{
+    color: #fff;
+    background-color: rgb(49, 25, 25);
+}
+span::selection{
+    color: #fff;
+    background-color: rgb(49, 25, 25);
+}
+img::selection{
+    background-color: rgba(49, 25, 25, 0.55);
+}
+a::selection{
+    color: #fff;
+    background-color: rgb(49, 25, 25);
+}
+button::selection{
+    color: #fff;
+    background-color: rgb(49, 25, 25);
+}
+br::selection{
+    color: #fff;
+    background-color: rgb(49, 25, 25);
+}
+
+
+
+
+
+
+
+
+/* статичное меню */
+
+/* мобильное меню*/
+.mobilemenu{
+    display: none;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    z-index: 1000;
+}
+.navContainer{
+    padding: 15px 0;
+    max-width: 1140px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+/* логотип */
+.logo{
+    width: 50%;
+    height: 100%;
+}
+.logo h3{
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+}
+.logo h3 a{
+    color: #fff;
+}
+.menu{
+    width: 50%;
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.menu ul li a{
+    padding: 3px 10px 2px 10px;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    line-height: 14px;
+    transition: .3s;
+}
+.menu ul li a:hover{
+    padding: 6px 8px 6px 8px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+/* главная страница */
+header{
+    height: 100vh;
+    background-image: url("../img/кофе\ фон.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 3px #000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+header::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.4;
+}
+.headerGreetings{
+    z-index: 10;
+}
+.greetings h1{
+    font-weight: 700;
+    font-size: 85px;
+    text-align: center;
+    font-family: 'Playfair Display SC', serif;
+}
+.descriptionGreetings{
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.2;
+    font-family: 'Caveat', cursive;
+}
+
+/*блок о кофе*/
+.aboutCofeContainer{
+    margin: auto;
+    max-width: 1140px;
+    height: 800px;
+    display: flex;
+}
+/* контейнер с картинкой */
+.aboutCofeContainer .aboutCofeImg{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutCofeContainer .aboutCofeImg .aboutCofeImgContent{
+    width: 500px;
+    height: 600px;
+}
+.aboutCofeContainer .aboutCofeImg .aboutCofeImgContent .img{
+    width: 500px;
+    height: 600px;    
+}
+.aboutCofeContainer .aboutCofeImg .aboutCofeImgContent .img .img1{
+    width: 500px;
+    height: 600px;
+    border: 8px solid rgb(72, 22, 22);
+
+    margin-top: -30px;
+    margin-left: -90px;
+    box-shadow: 0px 5px 0px 10px rgb(255, 255, 255);
+}
+.aboutCofeContainer .aboutCofeImg .aboutCofeImgContent .img .img2{
+    margin-left: -50px;
+    margin-top: -570px;
+    width: 500px;
+    height: 600px;
+}
+/* контейнер с описанием */
+.aboutCofeDescription{
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: black;
+}
+/* название */
+.aboutCofeDescriptionH2{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 30px;
+    padding: 5px 10px;
+    line-height: 1.2;
+}
+/* описание */
+.aboutCofeDesc{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align:justify;
+    text-indent: 30px;
+}
+/* кнопка подробнее */
+.floating-button {
+    text-decoration: none;
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    margin: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    background: rgb(49, 25, 25);
+    color: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+    border: rgb(72, 22, 22) solid;
+}
+.floating-button:hover {
+    background: white;
+    box-shadow: 0 15px 20px rgb(49, 25, 25);
+    color: rgb(72, 22, 22);
+}
+
+
+
+
+
+/* меню */
+
+.products{
+    color: #000;
+    margin-top: 300px;
+    max-width: 1440px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.products .productsH2{
+    display: flex;
+    justify-content: center;
+    color: #000;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 30px;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-weight: 500;
+    font-family: 'Merriweather', serif;
+}
+.card{
+    display: flex;
+    height: 350px;
+    width: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15%;
+    border: dashed grey 1px;
+    margin-top: 40px;
+}
+.card:hover{
+    box-shadow: 1px 1px 50px rgb(49, 25, 25);
+    border: dashed rgb(49, 25, 25) 1px ;
+    transition: .3s;
+
+}
+.price{
+    font-size: 28px;
+    font-weight: 700;
+}
+.cardsimg{
+    height: 170px;
+}
+.cardDesc{
+    font-size: 30px;
+}
+.cardPrice{
+    font-size: 25px;
+    font-family: 'Prata', serif;
+}
+.cardsBuy{
+    font-size: 15px;
+    background-color: rgb(49, 25, 25);
+    height: 50px;
+    width: 180px;
+    border-radius: 50px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: .3s;
+}
+.cardsBuy:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(49, 25, 25);
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgb(49, 25, 25);
+    transition: .3s;
+
+}
+
+
+
+/* Блог */
+
+/* мобильная версия */
+.BlogCards .cardBlog .card__body .imgmobile .card_image{
+   display: none;
+}
+
+.Blog {
+    margin: auto;
+    max-width: 1440px;
+}
+.BlogCards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    font-family: 'Merriweather', serif;
+}
+.BlogH2{
+    display: flex;
+    justify-content: center;
+    color: #000;   
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 30px;
+}
+.cardBlog {
+    display: flex;
+    flex-direction: column;
+    width: 352px;
+    overflow: hidden;
+    box-shadow: 0 1.6px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 16px; 
+    color: #000;
+    border: dashed grey 1px;
+}
+.cardBlog:hover{
+    box-shadow: 1px 1px 50px rgb(49, 25, 25);
+    border: dashed rgb(49, 25, 25) 1px ;
+    transition: .3s;
+}
+.card__image {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}  
+.card__body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.card__body h4 {
+    font-size: 24px;
+    margin: 0;
+}
+.cardsMore{
+    display: flex;
+    justify-content: center;
+}
+.cardMore{
+    font-size: 15px;
+    background-color: rgb(49, 25, 25);
+    height: 50px;
+    width: 180px;
+    border-radius: 50px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: .3s;
+    margin-bottom: 20px;
+}
+.cardMore:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(49, 25, 25);
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgb(49, 25, 25);
+    transition: .3s;
+}
+
+
+
+/* контакты */
+
+.Contactme{
+    color: #000;
+    margin: auto;
+    max-width: 1440px;
+}
+.Contactme .ContactmeH2{
+    display: flex;
+    justify-content: center;
+    color: #000;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 30px;
+}
+.ContactmeInformation{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    align-items: center;
+}
+.Contactme .ContactmeBlock1{
+    background-color: rgb(0, 0, 0);
+    height: 365px;
+    width:355px;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10%;
+}
+.Contactme .ContactmeBlock1 .ContactmeInfo{
+    margin-left: 10px;
+    font-size: 21px;
+    font-weight: bold;
+}
+.Contactme .ContactmeBlock1  .ContactmeAddress .ContactmeAddressimg{
+    height: 30px;
+    width: 25px;
+    display: inline-block;
+    margin: 10px 10px;
+}
+.Contactme .ContactmeBlock1  .ContactmeAddress .ContactmeAddressimg .ContactmeImg{
+    height: 30px;
+    width: 25px;
+    display: inline-block;
+}
+.Contactme .ContactmeBlock1  .ContactmeAddress .ContactmeAddressText{
+    display: inline-block;
+    letter-spacing: 1px;
+} 
+.Contactme .ContactmeBlock1 .ContactmeE-account .ContactmeE-accountimg{
+    height: 30px;
+    width: 25px;
+    display: inline-block;
+    margin: 10px 10px;
+}
+.Contactme .ContactmeBlock1 .ContactmeE-account .ContactmeE-accountimg .ContactmeImg{
+    height: 30px;
+    width: 25px;
+    display: inline-block;
+}
+.Contactme .ContactmeBlock1 .ContactmeE-account .ContactmeE-accountText{
+    display: inline-block;
+    letter-spacing: 1px;
+}
+.Contactme .ContactmeBlock1 .ContactmePhone .ContactmePhoneimg{
+    height: 30px;
+    width: 25px;
+    display: inline-block;
+    margin: 10px 10px;
+}
+.Contactme .ContactmeBlock1 .ContactmePhone .ContactmePhoneimg .ContactmeImg{
+    height: 30px;
+    width: 25px;
+    display: inline-block;
+
+}
+.Contactme .ContactmeBlock1 .ContactmePhone .ContactmePhoneText{
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.ContactmeBlock2{
+    height: 425px;
+    width:550px;
+    display: inline-block;
+    margin: 30px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+}
+.ContactmeMessage{
+    font-size: 21px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+    font-weight: bold; 
+    padding: 30px 0;
+}
+
+textarea{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    display: inlaine-block;
+    padding: 0.375rem 0.75rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    resize: none;
+    margin-top: 10px;
+}
+
+input{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    display: inlaine-block;
+    padding: 0.375rem 0.75rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    resize: none;
+}
+
+.commentmobile{
+    display: none;
+}
+
+/* футер */
+footer{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+    font-weight: bold;
+}
+.footerText{
+    text-align: center;
+    font-size: 14px;
+}
+footer .footerText a{
+    color: #fff;
+}
+footer .footerText a:hover{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+/* Адаптация */
+
+@media (max-width: 437px){
+    /* body{
+        background-color: rgb(245, 220, 225);
+    } */
+
+
+    /* логотип */
+    .logo{
+        font-size: 13px;
+        padding-right: 20px;
+        width: 18%;
+
+    }
+    /* меню */
+    .menu{
+        display: none;
+    }
+    .navContainer{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .mobilemenu {
+        position: relative;
+        display: inline-block;
+        padding-left: 20px;
+    }
+    .mobilemenu-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .mobilemenu-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-family: 'Merriweather', serif;
+    }
+    .mobilemenu-content a:hover {
+        background-color: rgb(49, 25, 25);
+        color: #fff;
+    }
+    .mobilemenu:hover .mobilemenu-content {
+        display: block;
+    }
+
+
+    /* главная страница */
+    .greetings h1{
+        font-size: 50px;
+    }
+    .descriptionGreetings{
+        font-size: 15px;
+    }
+
+    /* о кофе */
+    .aboutCofeContainer{
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+    /* контейнер с картинкой */
+    .aboutCofeContainer .aboutCofeImg .aboutCofeImgContent{
+        max-width: 250px;
+        max-height: 350px;
+        
+    }
+    .aboutCofeContainer .aboutCofeImg .aboutCofeImgContent .img{
+        max-width: 250px;
+        max-height: 350px;
+    }
+    .aboutCofeContainer .aboutCofeImg .aboutCofeImgContent .img .img1{
+        max-width: 250px;
+        max-height: 350px;
+        margin-left: 0;
+    }
+    .aboutCofeContainer .aboutCofeImg .aboutCofeImgContent .img .img2{
+        margin-left: 30px;
+        max-width: 250px;
+        max-height: 350px;
+    }
+    /* описание */
+    .aboutCofeDescription{
+        align-items: center;
+        width: 70%;
+    }
+    .aboutCofeDesc{
+        font-size: 15px;
+        margin-top: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    /* Блог */
+    .BlogCards .cardBlog .card__body .imgmobile .card_image{
+        display: inline;
+    }
+    .BlogCards {
+        justify-content: center;        
+    }
+    .cardBlog{
+        margin-bottom: 20px;
+    }
+    .card_image{
+        width: 300px;
+        border-radius: 20px;
+        margin-right: 15px;
+    }
+    .cardBlog {
+        width: 90%;
+    }
+    .card__image {
+    display: none;
+    }  
+    .card__body {
+        padding: 20px;  
+    }
+    .card__body h4 {
+        font-size: 33px;
+        text-align: center;
+    }
+    .cardsMore{ 
+        padding-bottom: 15px;
+    }
+    /* контакты */
+    .Contactme .ContactmeBlock1{
+        height: 200px;
+        width: 70%;
+        border-radius: 20px;
+        font-size: 13px;
+        padding-top: 5px;
+    }
+    .Contactme .ContactmeBlock1 .ContactmeInfo{
+        text-align: center;
+    }
+    .ContactmeBlock2{
+        width:300px;
+        margin-left: 0px;
+        margin-right: 0;
+        align-items: center;
+
+    }
+    .ContactmeForms{
+        width: 300px;
+    } 
+    .comment{
+        display: none;
+    } 
+    .commentmobile{
+        display: inline;
+    }
+}
+
+@media (min-width: 438px) and (max-width:580px){
+    /* body{
+        background-color: rgb(237, 220, 245);
+    } */
+
+
+    /* логотип */
+    .logo{
+        font-size: 13px;
+        padding-right: 20px;
+        width: 18%;
+
+    }
+    /* меню */
+    .menu{
+        display: none;
+    }
+    .navContainer{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .mobilemenu {
+        position: relative;
+        display: inline-block;
+        padding-left: 20px;
+    }
+    .mobilemenu-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .mobilemenu-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-family: 'Merriweather', serif;
+    }
+    .mobilemenu-content a:hover {
+        background-color: rgb(49, 25, 25);
+        color: #fff;
+    }
+    .mobilemenu:hover .mobilemenu-content {
+        display: block;
+    }
+
+
+    /* главная страница */
+    .greetings h1{
+        font-size: 60px;
+    }
+    .descriptionGreetings{
+        font-size: 20px;
+    }
+ 
+
+    /* о кофе */
+    .aboutCofeContainer{
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+    /* контейнер с картинкой */
+    .aboutCofeContainer .aboutCofeImg .aboutCofeImgContent{
+        max-width: 300px;
+        max-height: 400px;
+        
+    }
+    .aboutCofeContainer .aboutCofeImg .aboutCofeImgContent .img{
+        max-width: 300px;
+        max-height: 400px;
+    }
+    .aboutCofeContainer .aboutCofeImg .aboutCofeImgContent .img .img1{
+        max-width: 300px;
+        max-height: 400px;
+        margin-left: 0;
+    }
+    .aboutCofeContainer .aboutCofeImg .aboutCofeImgContent .img .img2{
+        margin-left: 40px;
+        max-width: 300px;
+        max-height: 400px;
+    }
+    /* описание */
+    .aboutCofeDescription{
+        align-items: center;
+        width: 70%;
+    }
+    .aboutCofeDesc{
+        font-size: 19px;
+        margin-top: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    /* Блог */
+    .BlogCards .cardBlog .card__body .imgmobile .card_image{
+        display: inline;
+    }
+    .BlogCards {
+        justify-content: center;        
+    }
+    .cardBlog{
+        margin-bottom: 20px;
+    }
+    .card_image{
+        width: 300px;
+        border-radius: 20px;
+        /* float: left; */
+        margin-right: 15px;
+    }
+    .cardBlog {
+        width: 90%;
+    }
+    .card__image {
+    display: none;
+    }  
+    .card__body {
+        padding: 20px;  
+    }
+    .card__body h4 {
+        font-size: 33px;
+        text-align: center;
+    }
+    .cardsMore{ 
+        padding-bottom: 15px;
+    }
+    /* контакты */
+    .Contactme .ContactmeBlock1{
+        height: 200px;
+        width:420px;
+        width: 70%;
+        border-radius: 20px;
+    }
+    .Contactme .ContactmeBlock1 .ContactmeInfo{
+        text-align: center;
+    }
+    .ContactmeBlock2{
+        width:200px;
+        margin-left: 0px;
+        margin-right: 0;
+        align-items: center;
+
+    }  
+
+}
+
+@media (min-width:581px) and (max-width: 767px){
+    /* body{
+        background-color: rgb(119, 243, 36);
+    } */
+
+
+    /* логотип */
+    .logo{
+        padding-left: 20px;
+        width: 30%;
+
+    }
+    /* меню */
+    .menu{
+        width: 70%;
+    }
+    /* о кофе */
+    .aboutCofeContainer{
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+    /* контейнер с картинкой */
+    .aboutCofeContainer .aboutCofeImg .aboutCofeImgContent{
+        width: 400px;
+        height: 500px;
+    }
+    .aboutCofeContainer .aboutCofeImg .aboutCofeImgContent .img{
+        width: 400px;
+        height: 500px;    
+    }
+    .aboutCofeContainer .aboutCofeImg .aboutCofeImgContent .img .img1{
+        width: 400px;
+        height: 500px;
+        margin-left: 0px;
+    }
+    .aboutCofeContainer .aboutCofeImg .aboutCofeImgContent .img .img2{
+        margin-left: 40px;
+        width: 400px;
+        height: 500px;
+    }
+    /* описание */
+    .aboutCofeDescription{
+        align-items: center;
+        width: 70%;
+    }
+    .aboutCofeDesc{
+        font-size: 19px;
+        margin-top: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    /* Блог */
+    .BlogCards .cardBlog .card__body .imgmobile .card_image{
+        display: inline;
+    }
+    .BlogCards {
+        justify-content: center;        
+    }
+    .cardBlog{
+        margin-bottom: 20px;
+    }
+    .card_image{
+        width: 300px;
+        border-radius: 20px;
+        float: left;
+        margin-right: 15px;
+    }
+    .cardBlog {
+        width: 90%;
+    }
+    .card__image {
+    display: none;
+    }  
+    .card__body {
+        padding: 20px;  
+    }
+    .card__body h4 {
+        font-size: 33px;
+        text-align: center;
+    }
+    .cardsMore{ 
+        padding-bottom: 15px;
+    }
+    /* контакты */
+    .Contactme .ContactmeBlock1{
+        height: 200px;
+        width:420px;
+        border-radius: 20px;
+    }
+    .Contactme .ContactmeBlock1 .ContactmeInfo{
+        text-align: center;
+    }
+    .ContactmeBlock2{
+        width:450px;
+        margin-left: 0px;
+        margin-right: 0;
+        align-items: center;
+
+    }  
+
+
+
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 927px){
+    /* body{
+        background-color: rgb(194, 226, 255);
+    } */
+
+    /* логотип */
+    .logo{
+        padding-left: 20px;
+    }
+    /* меню */
+    .menu{
+        width: 55%;
+    }
+    /* о кофе */
+    .aboutCofeContainer{
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+    /* контейнер с картинкой */
+    .aboutCofeContainer .aboutCofeImg .aboutCofeImgContent{
+        width: 400px;
+        height: 500px;
+    }
+    .aboutCofeContainer .aboutCofeImg .aboutCofeImgContent .img{
+        width: 400px;
+        height: 500px;    
+    }
+    .aboutCofeContainer .aboutCofeImg .aboutCofeImgContent .img .img1{
+        width: 400px;
+        height: 500px;
+        margin-left: 0px;
+    }
+    .aboutCofeContainer .aboutCofeImg .aboutCofeImgContent .img .img2{
+        margin-left: 40px;
+        width: 400px;
+        height: 500px;
+    }
+    /* описание */
+    .aboutCofeDescription{
+        align-items: center;
+        width: 70%;
+    }
+    .aboutCofeDesc{
+        font-size: 19px;
+        margin-top: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    /* Блог */
+    .BlogCards .cardBlog .card__body .imgmobile .card_image{
+        display: inline;
+    }
+    .BlogCards {
+        justify-content: center;        
+    }
+    .cardBlog{
+        margin-bottom: 20px;
+    }
+    .card_image{
+        width: 300px;
+        border-radius: 20px;
+        float: left;
+        margin-right: 15px;
+    }
+    .cardBlog {
+        width: 90%;
+    }
+    .card__image {
+    display: none;
+    }  
+    .card__body {
+        padding: 20px;  
+    }
+    .card__body h4 {
+        font-size: 33px;
+        text-align: center;
+    }
+    .cardsMore{ 
+        padding-bottom: 15px;
+    }
+    /* контакты */
+    .Contactme .ContactmeBlock1{
+        height: 200px;
+        width:420px;
+        border-radius: 20px;
+    }
+    .Contactme .ContactmeBlock1 .ContactmeInfo{
+        text-align: center;
+    }
+    .ContactmeBlock2{
+        width:450px;
+        margin-left: 0px;
+        margin-right: 0;
+        align-items: center;
+
+    }  
+
+
+}
+  
+@media(min-width: 928px) and (max-width: 1045px){
+    /* body{
+        background-color: rgb(203, 243, 174);
+    } */
+
+
+
+
+
+
+    /* логотип */
+    .logo{
+        padding-left: 20px;
+    }
+    /* контейнер с картинкой */
+    .aboutCofeContainer .aboutCofeImg .aboutCofeImgContent{
+        width: 400px;
+        height: 500px;
+    }
+    .aboutCofeContainer .aboutCofeImg .aboutCofeImgContent .img{
+        width: 400px;
+        height: 500px;    
+    }
+    .aboutCofeContainer .aboutCofeImg .aboutCofeImgContent .img .img1{
+        width: 400px;
+        height: 500px;
+        margin-left: 0px;
+    }
+    .aboutCofeContainer .aboutCofeImg .aboutCofeImgContent .img .img2{
+        margin-left: 40px;
+        width: 400px;
+        height: 500px;
+    }
+    /* описание */
+    .aboutCofeDesc{
+        font-size: 19px;
+    }
+    /* Блог */
+    .BlogCards .cardBlog .card__body .imgmobile .card_image{
+        display: inline;
+    }
+    .BlogCards {
+        justify-content: center;        
+    }
+    .cardBlog{
+        margin-bottom: 20px;
+    }
+    .card_image{
+        width: 300px;
+        border-radius: 20px;
+        float: left;
+        margin-right: 15px;
+    }
+    .cardBlog {
+        width: 90%;
+    }
+    .card__image {
+    display: none;
+    }  
+    .card__body {
+        padding: 20px;  
+    }
+    .card__body h4 {
+        font-size: 33px;
+        text-align: center;
+    }
+    .cardsMore{ 
+        padding-bottom: 15px;
+    }
+    /* контакты */
+    .ContactmeBlock2{
+        width:450px;
+        margin-left: 30px;
+        margin-right: 0;
+    }  
+}
+  
+@media(min-width: 1046px) and (max-width: 1225px){
+    /* body{
+    background-color: rgb(229, 255, 0);
+    } */
+    /* логотип */
+    .logo{
+        padding-left: 20px;
+    }
+    /* контейнер с картинкой */
+    .aboutCofeContainer .aboutCofeImg .aboutCofeImgContent{
+        width: 400px;
+        height: 500px;
+    }
+    .aboutCofeContainer .aboutCofeImg .aboutCofeImgContent .img{
+        width: 400px;
+        height: 500px;    
+    }
+    .aboutCofeContainer .aboutCofeImg .aboutCofeImgContent .img .img1{
+        width: 400px;
+        height: 500px;
+        margin-left: 0px;
+    }
+    .aboutCofeContainer .aboutCofeImg .aboutCofeImgContent .img .img2{
+        margin-left: 40px;
+        width: 400px;
+        height: 500px;
+    }
+    /* описание */
+    .aboutCofeDesc{
+        font-size: 19px;
+    }
+
+    /* контакты */
+    .ContactmeBlock2{
+        width:450px;
+        margin-left: 30px;
+        margin-right: 0;
+    }  
+}
